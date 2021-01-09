@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="spotify_authentication_view_form" model="ir.ui.view">
+            <field name="name">spotify_authentication_view_form</field>
+            <field name="model">spotify.authentication</field>
+            <field name="arch" type="xml">
+                <form string="spotify_authentication_form">
+                    <header>
+                        <button string="Login" name="login" type="object"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="client_id"/>
+                                <field name="client_secret"/>
+                                <field name="client"/>
+                                <field name="url"/>
+                                <field name="grant_type"/>
+                            </group>
+                            <group>
+                                <field name="access_token" readonly="1"/>
+                                <field name="token_type" readonly="1"/>
+                                <field name="expires_in" readonly="1"/>
+                                <field name="scope" readonly="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="spotify_authentication_view_tree" model="ir.ui.view">
+            <field name="name">spotify_authentication_view_tree</field>
+            <field name="model">spotify.authentication</field>
+            <field name="arch" type="xml">
+                <tree string="spotify_authentication_tree">
+                    <field name="client_id"/>
+                    <field name="client_secret"/>
+                    <field name="url"/>
+                    <field name="grant_type"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="spotify_authentication_action" model="ir.actions.act_window">
+            <field name="name">Spotify Authentication</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">spotify.authentication</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="menu_spotify"
+                  name="Spotify"
+                  parent="contacts.res_partner_menu_config"
+                  sequence="9"/>
+
+        <menuitem id="spotify_authentication_view"
+                  name="Spotify Authentication"
+                  parent="menu_spotify"
+                  action="spotify_authentication_action"
+                  sequence="1"/>
+    </data>
+</odoo>

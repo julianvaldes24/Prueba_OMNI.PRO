@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="spotify_gender_view_tree" model="ir.ui.view">
+            <field name="name">spotify_gender_view_tree</field>
+            <field name="model">spotify.gender</field>
+            <field name="arch" type="xml">
+                <tree string="spotify_gender_tree" editable="top">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="spotify_gender_action" model="ir.actions.act_window">
+            <field name="name">spotify_gender</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">spotify.gender</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="spotify_gender_categ" name="Gender" parent="spotify.menu_spotify"
+                  action="spotify.spotify_gender_action" sequence="2"/>
+
+
+    </data>
+</odoo>

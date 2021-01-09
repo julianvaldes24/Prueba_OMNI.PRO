@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="spotify_partner_form_inherit" model="ir.ui.view">
+            <field name="name">spotify.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="genres" widget="many2many_tags"/>
+                </xpath>
+                <xpath expr="//page[@name='sales_purchases']" position="after">
+                    <page name="spotify_songs" string="Spotify Songs">
+                        <field name="recommended_songs"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

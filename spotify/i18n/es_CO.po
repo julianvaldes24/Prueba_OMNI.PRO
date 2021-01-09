@@ -1,0 +1,267 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* spotify
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20201212\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-09 18:16+0000\n"
+"PO-Revision-Date: 2021-01-09 13:28-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__access_token
+msgid "Access token"
+msgstr "Token de acceso"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__artist
+msgid "Artist"
+msgstr "Artista"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__client
+msgid "Client"
+msgstr "Cliente"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__client_id
+msgid "Client ID"
+msgstr ""
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__client_secret
+msgid "Client Secret"
+msgstr ""
+
+#. module: spotify
+#: model:ir.model,name:spotify.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__create_uid
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__create_uid
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__create_uid
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__create_date
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__create_date
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__create_date
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: spotify
+#: model:ir.model,name:spotify.model_spotify_song
+msgid "Description"
+msgstr "Descripción"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_res_partner__display_name
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__display_name
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__display_name
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__display_name
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__expires_in
+msgid "Expires in"
+msgstr "Expira en"
+
+#. module: spotify
+#: model:ir.ui.menu,name:spotify.spotify_gender_categ
+msgid "Gender"
+msgstr "Género"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_res_partner__genres
+#: model:ir.model.fields,field_description:spotify.field_res_users__genres
+msgid "Genres"
+msgstr "Géneros"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__grant_type
+msgid "Grant type"
+msgstr "Tipo de subvención"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_res_partner__id
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__id
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__id
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__id
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__id
+msgid "ID"
+msgstr ""
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__id_track
+msgid "Id Track"
+msgstr "Id pista"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_res_partner____last_update
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication____last_update
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation____last_update
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender____last_update
+#: model:ir.model.fields,field_description:spotify.field_spotify_song____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__write_uid
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__write_uid
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__write_uid
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__write_date
+#: model:ir.model.fields,field_description:spotify.field_spotify_automation__write_date
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__write_date
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_authentication_view_form
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#. module: spotify
+#: model:ir.model,name:spotify.model_spotify_gender
+msgid "Model that stores music genomers according to the spotify database"
+msgstr "Modelo que almacena genómeros musicales según la base de datos de spotify"
+
+#. module: spotify
+#: model:ir.model,name:spotify.model_spotify_automation
+msgid "Model used to automate the fetch of data from spotify"
+msgstr "Modelo utilizado para automatizar la obtención de datos de Spotify"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_gender__name
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: spotify
+#: model:ir.model.constraint,message:spotify.constraint_spotify_gender_unique_name
+#: model:ir.model.constraint,message:spotify.constraint_spotify_song_unique_id_track
+msgid "Name gender already exists!"
+msgstr "¡El género del nombre ya existe!"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_res_partner__recommended_songs
+#: model:ir.model.fields,field_description:spotify.field_res_users__recommended_songs
+msgid "Recommended songs"
+msgstr "Canciones recomendadas"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__scope
+msgid "Scope"
+msgstr "Alcance"
+
+#. module: spotify
+#: model:ir.ui.menu,name:spotify.spotify_song_categ
+msgid "Songs"
+msgstr "Canciones"
+
+#. module: spotify
+#: model:ir.ui.menu,name:spotify.menu_spotify
+msgid "Spotify"
+msgstr ""
+
+#. module: spotify
+#: model:ir.actions.server,name:spotify.spotify_auth_automation_cron_ir_actions_server
+#: model:ir.cron,cron_name:spotify.spotify_auth_automation_cron
+#: model:ir.cron,name:spotify.spotify_auth_automation_cron
+msgid "Spotify Auth Automation"
+msgstr "Automatización de autenticación de Spotify"
+
+#. module: spotify
+#: model:ir.actions.act_window,name:spotify.spotify_authentication_action
+#: model:ir.ui.menu,name:spotify.spotify_authentication_view
+msgid "Spotify Authentication"
+msgstr "Autenticación de Spotify"
+
+#. module: spotify
+#: model:ir.actions.server,name:spotify.spotify_automation_cron_ir_actions_server
+#: model:ir.cron,cron_name:spotify.spotify_automation_cron
+#: model:ir.cron,name:spotify.spotify_automation_cron
+msgid "Spotify Automation"
+msgstr "Automatización de Spotify"
+
+#. module: spotify
+#: model:ir.actions.act_window,name:spotify.spotify_song_action
+msgid "Spotify Song"
+msgstr "Canción de Spotify"
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_partner_form_inherit
+msgid "Spotify Songs"
+msgstr "Canciones de Spotify"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__token_type
+msgid "Token type"
+msgstr "Tipo de token"
+
+#. module: spotify
+#: model:ir.model.fields,field_description:spotify.field_spotify_authentication__url
+#: model:ir.model.fields,field_description:spotify.field_spotify_song__url
+msgid "Url"
+msgstr ""
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_authentication_view_form
+msgid "spotify_authentication_form"
+msgstr "Forma de autenticación de Spotify"
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_authentication_view_tree
+msgid "spotify_authentication_tree"
+msgstr "Lista de autenticación de spotify"
+
+#. module: spotify
+#: model:ir.actions.act_window,name:spotify.spotify_gender_action
+msgid "spotify_gender"
+msgstr "Spotify género"
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_gender_view_tree
+msgid "spotify_gender_tree"
+msgstr "Spotify género lista"
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_song_view_form
+msgid "spotify_song_form"
+msgstr "Spotify género forma"
+
+#. module: spotify
+#: model_terms:ir.ui.view,arch_db:spotify.spotify_song_view_tree
+msgid "spotify_song_tree"
+msgstr "Spotify género lista"
+
+#. module: spotify
+#: model:ir.model,name:spotify.model_spotify_authentication
+msgid "table that stores the authentication record to the spotify API"
+msgstr "tabla que almacena el registro de autenticación en la API de Spotify"

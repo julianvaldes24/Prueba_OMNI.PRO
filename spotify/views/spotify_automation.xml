@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="spotify_automation_cron" forcecreate='True' model="ir.cron">
+            <field name="name">Spotify Automation</field>
+            <field eval="True" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="model_id" ref="spotify.model_spotify_automation"/>
+            <field name="state">code</field>
+            <field name="code">model.fill_genres_spotify()</field>
+        </record>
+        <record id="spotify_auth_automation_cron" forcecreate='True' model="ir.cron">
+            <field name="name">Spotify Auth Automation</field>
+            <field eval="True" name="active"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="model_id" ref="spotify.model_spotify_automation"/>
+            <field name="state">code</field>
+            <field name="code">model.authentication()</field>
+            <field name="priority" eval="1"/>
+        </record>
+    </data>
+</odoo>

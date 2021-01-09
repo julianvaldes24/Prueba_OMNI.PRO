@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="spotify_song_view_form" model="ir.ui.view">
+            <field name="name">spotify_song_view_form</field>
+            <field name="model">spotify.song</field>
+            <field name="arch" type="xml">
+                <form string="spotify_song_form">
+                    <sheet>
+                        <group>
+                            <field name="id_track"/>
+                            <field name="name"/>
+                            <field name="artist"/>
+                            <field name="url" widget="url"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="spotify_song_view_tree" model="ir.ui.view">
+            <field name="name">spotify_song_view_tree</field>
+            <field name="model">spotify.song</field>
+            <field name="arch" type="xml">
+                <tree string="spotify_song_tree">
+                    <field name="id_track"/>
+                    <field name="name"/>
+                    <field name="artist"/>
+                    <field name="url" widget="url"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="spotify_song_action" model="ir.actions.act_window">
+            <field name="name">Spotify Song</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">spotify.song</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="spotify_song_categ" name="Songs" parent="menu_spotify" action="spotify.spotify_song_action"
+                  sequence="3"/>
+
+    </data>
+</odoo>

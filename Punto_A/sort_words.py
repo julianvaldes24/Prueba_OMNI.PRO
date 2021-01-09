@@ -10,6 +10,10 @@ class SortWords:
         self.entry = entry
 
     def process(self):
+        """
+        Metodo principal que realizan el ordenamiento y orquestan la salida del documento
+
+        """
         messagebox.showinfo(message="Procesando", title="Procesando")
         try:
             with open(self.entry) as f:
@@ -27,6 +31,12 @@ class SortWords:
                 f.close()
 
     def _create_output(self, number_words, result):
+        """
+        Esta función crea el docuemnto de salida con los datos que le entran al metodo
+
+        :param number_words:
+        :param result:
+        """
         try:
             f = open("output.txt", "w")
             f.write(str(number_words) + "\n" + str(result))
@@ -38,6 +48,12 @@ class SortWords:
 
 
 def open_file():
+    """returns path
+
+    Esta función es recursiva y se llama hasta que el usuario seleccione un documento de entrada
+
+    :return: path
+    """
     path = filedialog.askopenfilename(initialdir="", title="Seleccione el archivo")
 
     if path:
@@ -48,6 +64,11 @@ def open_file():
 
 
 def main():
+    """
+    Metodo principla donde se instancia el objeto de la clase SortWords
+
+    :return: 0
+    """
     path = open_file()
     sort_words = SortWords(path)
     sort_words.process()

@@ -12,6 +12,9 @@ class Calculator:
         self.number_B = complex(float(complexB_Na), float(complexB_Nb))
 
     def process(self):
+        """
+        Metodo principal que realiza las operaciones con los numeros complejos, y muestra los resultados
+        """
         messagebox.showinfo(message="Procesando", title="Procesando")
         messagebox.showinfo(
             message="Numero complejos dados \n A = " + str(self.number_A) + "\n B = " + str(self.number_B),
@@ -37,10 +40,21 @@ class Calculator:
             print("Se incumple con el formato")
 
     def round_complex(self, x):
+        """
+        Metodo que redondea numero complejos
+
+        :param x: número complejo
+        :return: número complejo redondeado
+        """
         return complex(round(x.real, 2), round(x.imag, 2))
 
 
 def main():
+    """
+    Metodo principla donde se instancia el objeto de la clase Calculator, y se le pasa por parametros los
+    números para instaciar numeros complejos
+    :return: 0
+    """
     root = tk.Tk()
     aA = simpledialog.askfloat("Input", "Número Real para primer complejo")
     aB = simpledialog.askfloat("Input", "Número Imaginario para primer complejo")
