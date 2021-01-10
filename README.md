@@ -41,6 +41,16 @@ Buscar Automatización de Spotify, entrar y dar clic en Ejecutar Manualmente
 
 (Esto solo es necesario en caso de que el cron al principio no cargue el modelo de Generos musicales)
 
+### Función Principal
+
+1. En la aplicacion de contactos cree uno nuevo, seleccione un genero
+
+![img_6.png](img_6.png)
+
+2. De clic en Guardar y luego valla a la pestaña Canciones de Spotify
+
+![img_7.png](img_7.png)
+
 
 
 
